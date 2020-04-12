@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Homework 6</title>
+</head>
+<body>
+  <div class="jumbotron header">
+    <h1>Weather App</h1>
+    
+  </div>
+
+     <!-- weather conditions output fields -->
+  <div class="container">
+    <div class="row" id="searchcity">
+      <div class="col-md-4">
+        <h3>Search City</h3>
+      <!-- city search bar -->
+        <div class="form-inline my-2 my-lg-0">
+          <div class="tex-center" id="errorMessage"></div>
+            <input class="form-control mr-sm-2 input-city" type="text" id="inputcity" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary my-2 my-sm-0" id="searchbutton" type="submit">Search</button>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <h5>Search List</h5>
+            <div id="searchlist"></div>
+        </div>
+      </div>
+      <div class="container" id="citycontainer">
+          Adelaide, Brisbane, Perth, Hobart, Darwin, Melbourne, Sydney, Canberra
+      </div>
+      <div class="data-output col-md-8">
+      <!-- current weather output fields -->
+        <h2>Today's weather forecast</h2>
+          <div class="box" id="displayweather">
+            <div class="data">
+              <h4 class="data" id="temp"></h4>
+              <h4 class="data" id="humidity"></h4>
+              <h4 class="data" id="wind"></h4>
+              <h4 class="data" id="sky"></h4>
+              <h4 class="data" id="uv"></h4>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<!-- these are the JavaScript links -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+<script src="./assets/js/weather.js"></script>    
+</body>
+</html>
